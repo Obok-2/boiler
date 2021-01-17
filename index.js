@@ -27,7 +27,7 @@ app.post('/register',(req,res)=>{
   user.save((err,userInfo)=>{
     if(err) {
       return res.json({success : false,err})
-    }else {
+    }else{
       return res.status(200).json({success:true})
     }
   }) //save 는 몽고db 메소드?
